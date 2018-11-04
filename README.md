@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/epfister/reactcicd/_apis/build/status/evanpfister.react-cicd)](https://dev.azure.com/epfister/reactcicd/_build/latest?definitionId=9)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
