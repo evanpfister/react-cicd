@@ -1,6 +1,6 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import "./App.css";
+import React from 'react'
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import './App.css'
 
 const App = () => (
   <Router>
@@ -12,12 +12,12 @@ const App = () => (
       <Route path="/topics" component={Topics} />
     </div>
   </Router>
-);
+)
 
-const Home = () => <h2>Home</h2>;
-const About = () => <h2>About</h2>;
-const Topic = ({ match }) => <h3>Requested Param: {match.params.id}</h3>;
-const Topics = ({ match }) => (
+const Home = () => <h2>Home</h2>
+const About = () => <h2>About</h2>
+const Topic = ({match}) => <h3>Requested Param: {match.params.id}</h3>
+const Topics = ({match}) => (
   <div>
     <h2>Topics</h2>
 
@@ -31,13 +31,10 @@ const Topics = ({ match }) => (
     </ul>
 
     <Route path={`${match.path}/:id`} component={Topic} />
-    <Route
-      exact
-      path={match.path}
-      render={() => <h3>Please select a topic.</h3>}
-    />
+    <Route exact path={match.path} render={() => <h3>Please select a topic.</h3>} />
   </div>
-);
+)
+
 const Header = () => (
   <ul>
     <li>
@@ -50,6 +47,6 @@ const Header = () => (
       <Link to="/topics">Topics</Link>
     </li>
   </ul>
-);
+)
 
-export default App;
+export default App

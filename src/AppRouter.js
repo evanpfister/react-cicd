@@ -1,9 +1,9 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React from 'react'
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 
-const Index = () => <h2>Home</h2>;
-const About = () => <h2>About</h2>;
-const Users = () => <h2>Users</h2>;
+const Index = () => <h2>Home</h2>
+const About = () => <h2>About</h2>
+const Users = () => <h2>Users</h2>
 
 const AppRouter = () => (
   <Router>
@@ -27,6 +27,6 @@ const AppRouter = () => (
       <Route path="/users/" component={Users} />
     </div>
   </Router>
-);
+)
 
-export default AppRouter;
+export default AppRouter
