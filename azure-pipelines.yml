@@ -35,6 +35,11 @@ steps:
   inputs:
     command: custom
     customCommand: 'run-script build'
+
+- task: CopyFiles@2
+  inputs:
+    contents: 'web.config' 
+    targetFolder: '$(System.DefaultWorkingDirectory)/build'
     
 - task: ArchiveFiles@2
   inputs:
