@@ -18,7 +18,7 @@ steps:
   inputs:
     checkLatest: true
 
-- task: Yarn@2
+- task: Yarn@1
   displayName: 'yarn test'
   inputs:
     command: custom
@@ -35,7 +35,7 @@ steps:
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/*coverage.xml'
     reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
 
-- task: Yarn@2
+- task: Yarn@1
   displayName: 'yarn build'
   inputs:
     command: custom
