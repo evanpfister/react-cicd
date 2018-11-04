@@ -15,7 +15,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React & Azure CI/CD test 2
+            Learn React & Azure CI/CD test 3
           </a>
         </header>
       </div>
